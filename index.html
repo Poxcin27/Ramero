@@ -9,6 +9,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -27,6 +28,22 @@
             border-radius: 10px;
             max-width: 600px;
             width: 100%;
+            position: relative;
+        }
+
+        .title {
+            position: absolute;
+            top: -40px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: -30px;
+            font-size: 12px;
+            text-align: center;
         }
 
         .arrow-buttons {
@@ -136,6 +153,8 @@
 </head>
 <body>
     <div class="container">
+        <div class="title">Interfaz de Usuario</div>
+
         <!-- Arrow Buttons -->
         <div class="arrow-buttons">
             <button class="hidden"></button> <!-- Empty space -->
@@ -158,8 +177,10 @@
 
         <!-- Emergency Stop Button -->
         <div>
-            <button class="emergency-stop">Paro de Emergencia</button>
+            <button class="emergency-stop">Paro de Emerencia</button>
         </div>
+
+        <div class="footer">&copy; RAMERO Inc. 2025 <br> EST.   2019</div>
     </div>
 </body>
 </html>
