@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interfaz de Usuario</title>
+    <title>Button Layout</title>
     <style>
         body {
             margin: 0;
@@ -53,6 +53,10 @@
         .arrow-buttons button:hover {
             transform: scale(1.1);
             background-color: #0056b3;
+        }
+
+        .arrow-buttons button.hidden {
+            visibility: hidden;
         }
 
         .vertical-buttons {
@@ -134,15 +138,15 @@
     <div class="container">
         <!-- Arrow Buttons -->
         <div class="arrow-buttons">
-            <button></button> <!-- Empty space -->
+            <button class="hidden"></button> <!-- Empty space -->
             <button>&uarr;</button> <!-- Up -->
-            <button></button> <!-- Empty space -->
+            <button class="hidden"></button> <!-- Empty space -->
             <button>&larr;</button> <!-- Left -->
-            <button></button> <!-- Center -->
+            <button class="hidden"></button> <!-- Center -->
             <button>&rarr;</button> <!-- Right -->
-            <button></button> <!-- Empty space -->
+            <button class="hidden"></button> <!-- Empty space -->
             <button>&darr;</button> <!-- Down -->
-            <button></button> <!-- Empty space -->
+            <button class="hidden"></button> <!-- Empty space -->
         </div>
 
         <!-- Vertical Buttons -->
@@ -154,7 +158,7 @@
 
         <!-- Emergency Stop Button -->
         <div>
-            <button class="emergency-stop">Paro de Emergencia</button>
+            <button class="emergency-stop">Emergency Stop</button>
         </div>
     </div>
 </body>
